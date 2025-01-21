@@ -1,0 +1,11 @@
+**/target/ 
+**/bin/ 
+**/*.class 
+**/.idea/ 
+**/.vscode/ 
+frontend/node_modules/ 
+**/logs/ 
+**/*.log 
+**/.env 
+frontend/src/environments/environment.ts 
+frontend/src/environments/environment.prod.ts 
