@@ -16,7 +16,7 @@ export class ResturantListingComponent {
   constructor(private router:Router, private resturnantservice:RestaurantService){}
 
   ngOnInit(){
-    this.getAllResturants;
+    this.getAllResturants();
     console.log(this.restaurantList);
   }
 
