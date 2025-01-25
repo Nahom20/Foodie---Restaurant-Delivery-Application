@@ -11,7 +11,7 @@ import java.util.List;
 @AllArgsConstructor
 public class OrderDtoFromFt {
 
-    private List<FoodItemDto> foodItemDtos;
+    private List<FoodItemDto> foodItemList;;
     private Integer userId;
     private Resturant resturant;
 }
