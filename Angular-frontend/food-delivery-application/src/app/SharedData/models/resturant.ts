@@ -1,7 +1,7 @@
-export interface restaurant{
+export interface restaurant {
     id: number;
-    name: string;
-    address: string;
-    city: string
-    description: string;
+    name?: string;
+    address?: string ;
+    city?: string;
+    description?: string;
 }

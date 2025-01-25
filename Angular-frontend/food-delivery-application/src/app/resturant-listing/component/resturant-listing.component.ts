@@ -39,7 +39,7 @@ export class ResturantListingComponent {
   }
 
   onButtonClick(id:number){
-    this.router.navigate(["/foodcatalogue",id])
+    this.router.navigate(['/foodcatalogue',id])
   }
 
 
