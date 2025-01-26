@@ -2,7 +2,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { OrderService } from '../service/order.service';
-import { OrderDTO } from '../models/orderdto';
+import { OrderDTO } from '../models/OrderDTO';
 
 @Component({
   selector: 'app-order-summary',
