@@ -96,6 +96,15 @@
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<version>2.7.12</version>
+				<configuration>
+					<mainClass>com.foodie.order.OrderApplication</mainClass>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
