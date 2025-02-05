@@ -15,11 +15,20 @@ public class FoodItem {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
-    private String itemName;
+
+    @Column(name = "is_veggie")
+    private Boolean isVeggie;
+
+    @Column(name = "item_description")
     private String itemDescription;
-    private boolean isVeggie;
-    private Number price;
-    private Integer resturantId;
+
+    @Column(name = "item_name")
+    private String itemName;
+
+    private Integer price;
     @Column(nullable = false, columnDefinition = "INT DEFAULT 0")
     private Integer quantity;
+
+    @Column(name = "resturant_id")
+    private Integer resturantId;
 }

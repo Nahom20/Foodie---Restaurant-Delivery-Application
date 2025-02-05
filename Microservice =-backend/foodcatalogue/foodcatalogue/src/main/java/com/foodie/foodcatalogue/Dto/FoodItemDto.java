@@ -13,7 +13,7 @@ public class FoodItemDto {
     private String itemName;
     private String itemDescription;
     private boolean isVeggie;
-    private Number price;
+    private Double price;
     private Integer resturantId;
     private Integer quantity;
 }

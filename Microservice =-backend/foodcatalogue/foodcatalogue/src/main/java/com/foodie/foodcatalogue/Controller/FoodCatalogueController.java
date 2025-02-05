@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/foodcatalogue")
+@CrossOrigin(origins = "k8s-default-awsingre-9aa4c55379-1606959407.eu-west-2.elb.amazonaws.com")
 public class FoodCatalogueController {
 
     @Autowired
@@ -21,7 +22,7 @@ public class FoodCatalogueController {
         return new ResponseEntity<>(savedFoodItem, HttpStatus.CREATED);
     }
 
-    @GetMapping("fetchResturantAndFoodItemList/{resturantId}")
+    @GetMapping("/fetchResturantAndFoodItemList/{resturantId}")
     public ResponseEntity<FoodCataloguePage> fetchResturantAndFoodItemList(@PathVariable Integer resturantId){
         FoodCataloguePage foodCataloguePage = foodCatalogueService.fetchResturantAndFoodItemList(resturantId);
         return new ResponseEntity<>(foodCataloguePage, HttpStatus.OK);
