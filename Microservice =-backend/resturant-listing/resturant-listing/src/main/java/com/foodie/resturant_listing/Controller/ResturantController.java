@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/resturant")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "k8s-default-awsingre-9aa4c55379-1606959407.eu-west-2.elb.amazonaws.com")
 public class ResturantController {
 
     @Autowired
