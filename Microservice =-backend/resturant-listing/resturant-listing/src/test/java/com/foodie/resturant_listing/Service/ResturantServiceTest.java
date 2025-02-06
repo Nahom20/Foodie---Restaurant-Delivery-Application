@@ -84,4 +84,21 @@ public class ResturantServiceTest {
 
 
     }
+
+    @Test
+    public void testFetchResturantById_NonExistingId(){
+
+        Integer mockResturantId =1;
+
+        when(resturantRepository.findById(mockResturantId)).thenReturn(Optional.empty());
+
+        ResponseEntity<ResturantDto> response = resturantService.fetchResturantById(mockResturantId);
+
+        assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
+        assertEquals(null, response.getBody());
+
+        verify(resturantRepository, times(1)).findById(mockResturantId);
+
+
+    }
 }
